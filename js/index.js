@@ -11,3 +11,10 @@ function scrollFunction() {
     document.querySelector(".logo-heading").style.fontSize = "4rem";
   }
 }
+
+//hamburger click
+  let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click', function(){
+    document.querySelector('.new-nav').classList.toggle('hidden-new-nav');
+    document.querySelector('.container').classList.toggle('hidden-container');
+    window.scrollTo(0,0);
+  })

@@ -1,6 +1,14 @@
 .intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     img {
-        max-width: 100%;
+        width: 100%;
+        align-self: center;
+        @media @mobile {
+            width: 112%;
+            align-self: center;
+        }
     }
 }
 
