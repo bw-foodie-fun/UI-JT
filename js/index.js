@@ -14,7 +14,11 @@ function scrollFunction() {
 
 //hamburger click
   let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click', function(){
+    document.querySelector('.hamburger1').classList.toggle("change1");
+    document.querySelector('.hamburger2').classList.toggle("change2");
+    document.querySelector('.hamburger3').classList.toggle("change3");
     document.querySelector('.new-nav').classList.toggle('hidden-new-nav');
+    document.querySelector('.new-nav').classList.toggle('change');
     document.querySelector('.container').classList.toggle('hidden-container');
     window.scrollTo(0,0);
   })

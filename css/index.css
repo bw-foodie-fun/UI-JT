@@ -215,7 +215,7 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .main-navigation .nav-container .nav {
     width: 100%;
     justify-content: center;
@@ -225,17 +225,30 @@ p {
 .main-navigation .nav-container .hamburger-nav {
   cursor: pointer;
 }
-@media (min-width: 501px) {
+@media (min-width: 701px) {
   .main-navigation .nav-container .hamburger-nav {
     display: none;
   }
 }
-.main-navigation .nav-container .hamburger-nav .hamburger {
+.main-navigation .nav-container .hamburger-nav .hamburger1,
+.main-navigation .nav-container .hamburger-nav .hamburger2,
+.main-navigation .nav-container .hamburger-nav .hamburger3 {
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
   transition: 0.4s;
+}
+.main-navigation .nav-container .hamburger-nav .change1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.main-navigation .nav-container .hamburger-nav .change2 {
+  opacity: 0;
+}
+.main-navigation .nav-container .hamburger-nav .change3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 .main-navigation .nav-container a {
   font-size: 1.9rem;
