@@ -149,20 +149,29 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 140px;
 }
 @media (max-width: 500px) {
   .container {
     width: 90%;
     margin: 0 5%;
+    margin-top: 140px;
   }
 }
 .main-navigation {
-  background-color: lightblue;
+  background-color: red;
   width: 100%;
-  height: 110px;
+  height: 100px;
   margin: 0;
   display: flex;
   justify-content: center;
+  position: fixed;
+  padding: 20px 10px;
+  transition: 0.4s;
+  top: 0;
+}
+.main-navigation .logo-heading {
+  transition: 0.4s;
 }
 .main-navigation .nav-container {
   width: 100%;
