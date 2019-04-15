@@ -28,3 +28,9 @@ p {
     margin: 0 5%;
   }
 }
+.main-navigation a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+}
