@@ -1,10 +1,45 @@
+.new-nav {
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    margin: 0;
+    margin-top: 140px;
+    .new-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 30px;
+        a {
+            font-size: 1.9rem;
+            text-decoration: none;
+            color: black;
+            justify-content: space-between;
+            margin: 8px;
+        }
+    }
+}
+
+.hidden-new-nav {
+    display: none;
+}
+
 .main-navigation {
-    background-color: lightblue;
+    background-color: red;
     width: 100%;
-    height: 110px;
+    height: 100px;
     margin: 0;
     display: flex;
     justify-content: center;
+    position: fixed;
+    padding: 20px 10px;
+    // transition: 0.4s;
+    top: 0;
+
+
+    // .logo-heading {
+    //     transition: 0.4s;
+    // }
     
     .nav-container {
         width: 100%;
@@ -13,7 +48,49 @@
         justify-content: space-between;
         align-items: center;
         margin: 30px;
+        align-self: center;
+        @media @mobile {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
+        .nav {
+            display: flex;
+            justify-content: space-evenly;
+            @media @tablet {
+                width: 100%;
+                justify-content: center;
+                display: none;
+            }
+        }
+
+        .hamburger-nav {
+            cursor: pointer;
+            @media (min-width: 701px) {
+                display: none;
+            }
+            .hamburger1, .hamburger2, .hamburger3 {
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                margin: 6px 0;
+                transition: 0.4s;
+
+            }
+
+            .change1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+              
+            .change2 {opacity: 0;}
+              
+            .change3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+        }
+    
         a {
             font-size: 1.9rem;
             text-decoration: none;
