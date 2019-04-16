@@ -261,18 +261,20 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 10px;
 }
 .intro h2 {
   margin-top: 30px;
 }
+.intro p {
+  margin: 10px;
+}
 .intro img {
-  width: 110%;
+  width: 100%;
   align-self: center;
 }
 @media (max-width: 500px) {
   .intro img {
-    width: 112%;
+    width: 100vw;
     align-self: center;
   }
 }
@@ -340,15 +342,27 @@ p {
   flex-direction: column;
   align-content: center;
 }
+@media (max-width: 500px) {
+  .footer {
+    width: 100%;
+    align-self: center;
+  }
+}
 .footer .call-to-action {
   margin: 30px;
   margin-top: 60px;
   color: #f5f5f5;
+  text-align: center;
 }
 .footer .button {
   align-self: center;
   width: 20%;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .footer .button {
+    width: 90%;
+  }
 }
 .footer .button .sign-up-button {
   background-color: #008000;
@@ -356,6 +370,11 @@ p {
   height: 50px;
   cursor: pointer;
   width: 100%;
+}
+.footer .button .sign-up-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
 }
 .about {
   display: flex;
