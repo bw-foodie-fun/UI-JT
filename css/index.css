@@ -440,6 +440,7 @@ p {
   margin-bottom: 10px;
 }
 .contact .contact-us form .contact-submit {
+  font-size: 1.6rem;
   width: 130px;
   padding: 12px 20px;
   color: white;
@@ -447,6 +448,7 @@ p {
   border-radius: 8px;
   border: 1.5px solid #292929;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 @media (max-width: 500px) {
   .contact .contact-us form .contact-submit {
