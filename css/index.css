@@ -328,3 +328,21 @@ p {
     order: 2;
   }
 }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about .about-content-section {
+  justify-content: center;
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 28%;
+}
+.about .about-content-section .about-img-content {
+  justify-content: center;
+}
+.about .about-content-section .about-img-content img {
+  width: 100%;
+}
