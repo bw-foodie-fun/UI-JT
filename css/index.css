@@ -410,6 +410,51 @@ p {
     width: 80%;
   }
 }
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact .contact-us {
+  margin: 2%;
+  width: 100%;
+}
+.contact .contact-us form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.contact .contact-us form label {
+  font-size: 1.6rem;
+}
+.contact .contact-us form input[type=text],
+.contact .contact-us form select,
+.contact .contact-us form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.contact .contact-us form .contact-submit {
+  font-size: 1.6rem;
+  width: 130px;
+  padding: 12px 20px;
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+  border: 1.5px solid #292929;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .contact .contact-us form .contact-submit {
+    width: 100%;
+  }
+}
 .hidden-footer {
   display: none;
 }
