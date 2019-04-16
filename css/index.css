@@ -385,11 +385,30 @@ p {
   flex-wrap: wrap;
   width: 28%;
 }
+@media (max-width: 500px) {
+  .about .about-content-section {
+    width: 90%;
+  }
+}
 .about .about-content-section .about-img-content {
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .about .about-content-section .about-img-content img {
   width: 100%;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .about .about-content-section .about-img-content img {
+    width: 80%;
+    align-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-content-section .about-img-content p {
+    width: 80%;
+  }
 }
 .hidden-footer {
   display: none;

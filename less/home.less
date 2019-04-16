@@ -136,12 +136,30 @@
         display: flex;
         flex-wrap: wrap;
         width: 28%;
+
+        @media @mobile {
+            width: 90%;
+        }
     
         .about-img-content {
             justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
 
             img {
                 width: 100%;
+                align-self: center;
+
+                @media @mobile {
+                    width: 80%;
+                    align-self: center;
+                }
+            }
+
+            p {
+                @media @mobile {
+                    width: 80%;
+                }
             }
         }
     }
