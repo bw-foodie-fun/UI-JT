@@ -158,9 +158,6 @@ p {
     margin-top: 140px;
   }
 }
-.hidden-container {
-  display: none;
-}
 .new-nav {
   flex-wrap: wrap;
   width: 100vw;
@@ -393,4 +390,10 @@ p {
 }
 .about .about-content-section .about-img-content img {
   width: 100%;
+}
+.hidden-footer {
+  display: none;
+}
+.hidden-container {
+  display: none;
 }

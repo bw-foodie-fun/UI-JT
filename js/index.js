@@ -20,5 +20,6 @@ function scrollFunction() {
     document.querySelector('.new-nav').classList.toggle('hidden-new-nav');
     document.querySelector('.new-nav').classList.toggle('change');
     document.querySelector('.container').classList.toggle('hidden-container');
+    document.querySelector('.footer').classList.toggle('hidden-footer');
     window.scrollTo(0,0);
   })
