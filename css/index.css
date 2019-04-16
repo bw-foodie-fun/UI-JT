@@ -131,10 +131,12 @@ html {
 }
 h1 {
   font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 h4 {
   font-size: 2.5rem;
@@ -144,6 +146,13 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+label {
+  font-family: 'Open Sans', sans-serif;
 }
 .container {
   max-width: 800px;
