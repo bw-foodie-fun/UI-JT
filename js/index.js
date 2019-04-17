@@ -57,7 +57,7 @@ function darkMode() {
   document.querySelector("body").style.color = 'white';
   document.querySelector(".main-navigation").style.background = '#1b1d1e';
   document.querySelector(".new-nav").style.background = '#1b1d1e';
-  document.querySelector(".logo-heading").style.color = 'red';
+  document.querySelector(".logo-heading-a").style.color = 'red';
   let y = document.querySelectorAll('.hamburger')
   Array.from(y).forEach(function(y){
     y.style.background = 'red';
