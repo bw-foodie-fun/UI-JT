@@ -138,6 +138,11 @@ h2 {
   padding-bottom: 10px;
   font-family: 'Open Sans', sans-serif;
 }
+h3 {
+  font-size: 2.6rem;
+  padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -308,6 +313,7 @@ body {
 .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  align-self: center;
 }
 @media (max-width: 500px) {
   .content-section .text-content {
@@ -449,6 +455,7 @@ body {
   width: 100%;
 }
 .contact .contact-us form {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

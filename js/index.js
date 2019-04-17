@@ -57,18 +57,14 @@ function darkMode() {
   document.querySelector(".main-navigation").style.background = '#1b1d1e';
   document.querySelector(".new-nav").style.background = '#1b1d1e';
   document.querySelector(".logo-heading").style.color = 'red';
-  let z = document.querySelectorAll('.nav-link')
-  for (let j = 0; j < z.length; j++) {
-    z[j].style.color = 'red';
-  };
   let y = document.querySelectorAll('.hamburger')
-  for (let j = 0; j < y.length; j++) {
-    y[j].style.background = 'red';
-  };
+  Array.from(y).forEach(function(y){
+    y.style.background = 'red';
+  });
   let x = document.querySelectorAll(".nav-link")
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.color = 'white';
-  };
+  Array.from(x).forEach(function(x){
+    x.style.color = 'red';
+  })
   sessionStorage.setItem('darkModeActivated','yes');
   document.querySelector('.checkbox').checked = true;
 }
