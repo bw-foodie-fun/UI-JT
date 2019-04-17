@@ -36,6 +36,7 @@ let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click
   document.querySelector('.new-nav').classList.toggle('change');
   document.querySelector('.container').classList.toggle('hidden-container');
   document.querySelector('.footer').classList.toggle('hidden-container');
+  document.querySelector('.main-navigation').classList.toggle('transparent-main-navigation');
   window.scrollTo(0,0);
 })
 
