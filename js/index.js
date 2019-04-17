@@ -29,7 +29,6 @@ function scrollFunction() {
 
 //hamburger click
 let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click', function(){
-  // document.querySelector('.animate').classList.toggle('nav-expand');
   document.querySelector('.hamburger1').classList.toggle("change1");
   document.querySelector('.hamburger2').classList.toggle("change2");
   document.querySelector('.hamburger3').classList.toggle("change3");
@@ -44,11 +43,9 @@ let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click
 document.querySelector('.switch').addEventListener("change", function (event) {
   var darkModeActivated = sessionStorage.getItem('darkModeActivated') || '';
   if (darkModeActivated != 'yes') {
-      console.log('tseting')
       darkMode();
   }
   else if (darkModeActivated === 'yes') {
-      console.log('you already did that!')
       sessionStorage.removeItem('darkModeActivated','yes');
       document.location.reload()
   }
@@ -72,7 +69,6 @@ function darkMode() {
   for (let i = 0; i < x.length; i++) {
     x[i].style.color = 'white';
   };
-  console.log('success')
   sessionStorage.setItem('darkModeActivated','yes');
   document.querySelector('.checkbox').checked = true;
 }

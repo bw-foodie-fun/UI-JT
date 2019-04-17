@@ -181,7 +181,7 @@ body {
 .new-nav {
   flex-wrap: wrap;
   width: 100vw;
-  height: 100vh;
+  height: 0vh;
   background-color: red;
   margin: 0;
   margin-top: 140px;
@@ -212,6 +212,7 @@ body {
   padding: 20px 10px;
   top: 0;
   z-index: 2;
+  opacity: 0.95;
 }
 .main-navigation .nav-container {
   width: 100%;
@@ -492,13 +493,11 @@ body {
   align-self: center;
   margin-top: 50px;
 }
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
