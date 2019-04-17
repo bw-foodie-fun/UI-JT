@@ -233,6 +233,14 @@ body {
     flex-wrap: wrap;
   }
 }
+.main-navigation .nav-container .logo-heading {
+  cursor: pointer;
+  user-select: none;
+}
+.main-navigation .nav-container .logo-heading a {
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+}
 .main-navigation .nav-container .nav {
   display: flex;
   justify-content: space-evenly;
