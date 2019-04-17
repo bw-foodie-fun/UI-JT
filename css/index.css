@@ -310,6 +310,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.content-section p {
+  margin-top: 9px;
+}
 .content-section .text-content {
   width: 48%;
   padding-right: 1%;
