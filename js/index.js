@@ -2,8 +2,9 @@
 window.addEventListener('load', function(event) {
   var darkModeActivated = sessionStorage.getItem('darkModeActivated') || '';
   if (darkModeActivated === 'yes') {
-    console.log('dark mode is already activated')
+    document.querySelector('.checkbox').checked = true;
     darkMode();
+    console.log('dark mode is already activated')
   }
 });
 
@@ -35,17 +36,24 @@ function scrollFunction() {
   })
 
 //dark mode
-document.addEventListener("keydown", function (event) {
-  if (event.key === 'D') {
-    darkMode();
+document.querySelector('.switch').addEventListener("change", function (event) {
+  var darkModeActivated = sessionStorage.getItem('darkModeActivated') || '';
+  if (darkModeActivated != 'yes') {
+      console.log('tseting')
+      darkMode();
+  }
+  else if (darkModeActivated === 'yes') {
+      console.log('you already did that!')
+      sessionStorage.removeItem('darkModeActivated','yes');
+      document.location.reload()
   }
 })
 
 function darkMode() {
-        document.querySelector("body").style.background = 'black';
+        document.querySelector("body").style.background = '#1b1d1e';
         document.querySelector("body").style.color = 'white';
-        document.querySelector(".main-navigation").style.background = 'black';
-        document.querySelector(".new-nav").style.background = 'black';
+        document.querySelector(".main-navigation").style.background = '#1b1d1e';
+        document.querySelector(".new-nav").style.background = '#1b1d1e';
         document.querySelector(".logo-heading").style.color = 'red';
         let z = document.querySelectorAll('.nav-link')
         for (let j = 0; j < z.length; j++) {
@@ -61,5 +69,6 @@ function darkMode() {
         };
         console.log('success')
         sessionStorage.setItem('darkModeActivated','yes');
+        document.querySelector('.checkbox').checked = true;
 
     }
