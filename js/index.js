@@ -8,6 +8,7 @@
   }
 // });
 
+//prevents non dark mode styles from flashing on page load when dark mode is activated
 window.addEventListener('load', function(event) {
   document.body.style.visibility = 'visible';
 });
