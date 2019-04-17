@@ -20,10 +20,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("main-nav").style.padding = "0px 10px";
-    document.querySelector(".logo-heading").style.fontSize = "3rem";
+    document.querySelector(".logo-heading-a").style.fontSize = "3rem";
   } else {
     document.getElementById("main-nav").style.padding = "20px 10px";
-    document.querySelector(".logo-heading").style.fontSize = "4rem";
+    document.querySelector(".logo-heading-a").style.fontSize = "4rem";
   }
 }
 
@@ -36,6 +36,7 @@ let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click
   document.querySelector('.new-nav').classList.toggle('change');
   document.querySelector('.container').classList.toggle('hidden-container');
   document.querySelector('.footer').classList.toggle('hidden-container');
+  document.querySelector('.main-navigation').classList.toggle('transparent-main-navigation');
   window.scrollTo(0,0);
 })
 
@@ -56,7 +57,7 @@ function darkMode() {
   document.querySelector("body").style.color = 'white';
   document.querySelector(".main-navigation").style.background = '#1b1d1e';
   document.querySelector(".new-nav").style.background = '#1b1d1e';
-  document.querySelector(".logo-heading").style.color = 'red';
+  document.querySelector(".logo-heading-a").style.color = 'red';
   let y = document.querySelectorAll('.hamburger')
   Array.from(y).forEach(function(y){
     y.style.background = 'red';

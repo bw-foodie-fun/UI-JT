@@ -10,7 +10,7 @@
 .new-nav {
     flex-wrap: wrap;
     width: 100vw;
-    height: 100vh - 100px;
+    height: calc(100% - 140px);
     background-color: red;
     margin: 0;
     margin-top: 140px;
@@ -44,7 +44,6 @@
     padding: 20px 10px;
     top: 0;
     z-index: 2;
-    opacity: 0.95;
     
     .nav-container {
         width: 100%;
@@ -57,6 +56,16 @@
         @media @mobile {
             justify-content: space-between;
             flex-wrap: wrap;
+        }
+
+        .logo-heading {
+            cursor: pointer;
+            user-select: none;
+
+            a {
+                font-size: 4rem;
+                font-family: 'Open Sans', sans-serif;
+            }
         }
 
         .nav {
@@ -108,4 +117,8 @@
 
 .hidden-new-nav {
     display: none;
+}
+
+.transparent-main-navigation {
+    opacity: 0.95;
 }
