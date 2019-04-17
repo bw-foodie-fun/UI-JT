@@ -14,7 +14,6 @@
         width: 100%;
         align-self: center;
         @media @mobile {
-            // width: 100 + 11%;
             width: 100vw;
             align-self: center;
         }
@@ -27,11 +26,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    p {
+        margin-top: 9px;
+    }
     
     .text-content {
         width: 48%;
         padding-right: 1%;
+        align-self: center;
 
         @media @mobile {
         width: 100%;
@@ -178,9 +180,8 @@
     .contact-us {
         margin: 2%;
         width: 100%;
-
         form {
-
+            margin-top: 30px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -229,14 +230,12 @@
   margin-top: 50px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
