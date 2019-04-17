@@ -229,7 +229,7 @@ label {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .main-navigation .nav-container .nav {
     width: 100%;
     justify-content: center;
@@ -239,7 +239,7 @@ label {
 .main-navigation .nav-container .hamburger-nav {
   cursor: pointer;
 }
-@media (min-width: 701px) {
+@media (min-width: 801px) {
   .main-navigation .nav-container .hamburger-nav {
     display: none;
   }
