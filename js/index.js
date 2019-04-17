@@ -1,11 +1,15 @@
 //checks if already activated dark mode
-window.addEventListener('load', function(event) {
+// window.addEventListener('load', function(event) {
   var darkModeActivated = sessionStorage.getItem('darkModeActivated') || '';
   if (darkModeActivated === 'yes') {
     document.querySelector('.checkbox').checked = true;
     darkMode();
     console.log('dark mode is already activated')
   }
+// });
+
+window.addEventListener('load', function(event) {
+  document.body.style.visibility = 'visible';
 });
 
 
@@ -23,17 +27,17 @@ function scrollFunction() {
 }
 
 //hamburger click
-  let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click', function(){
-    // document.querySelector('.animate').classList.toggle('nav-expand');
-    document.querySelector('.hamburger1').classList.toggle("change1");
-    document.querySelector('.hamburger2').classList.toggle("change2");
-    document.querySelector('.hamburger3').classList.toggle("change3");
-    document.querySelector('.new-nav').classList.toggle('hidden-new-nav');
-    document.querySelector('.new-nav').classList.toggle('change');
-    document.querySelector('.container').classList.toggle('hidden-container');
-    document.querySelector('.footer').classList.toggle('hidden-container');
-    window.scrollTo(0,0);
-  })
+let dropdowns = document.querySelector('.hamburger-nav').addEventListener('click', function(){
+  // document.querySelector('.animate').classList.toggle('nav-expand');
+  document.querySelector('.hamburger1').classList.toggle("change1");
+  document.querySelector('.hamburger2').classList.toggle("change2");
+  document.querySelector('.hamburger3').classList.toggle("change3");
+  document.querySelector('.new-nav').classList.toggle('hidden-new-nav');
+  document.querySelector('.new-nav').classList.toggle('change');
+  document.querySelector('.container').classList.toggle('hidden-container');
+  document.querySelector('.footer').classList.toggle('hidden-container');
+  window.scrollTo(0,0);
+})
 
 //dark mode
 document.querySelector('.switch').addEventListener("change", function (event) {
@@ -50,25 +54,24 @@ document.querySelector('.switch').addEventListener("change", function (event) {
 })
 
 function darkMode() {
-        document.querySelector("body").style.background = '#1b1d1e';
-        document.querySelector("body").style.color = 'white';
-        document.querySelector(".main-navigation").style.background = '#1b1d1e';
-        document.querySelector(".new-nav").style.background = '#1b1d1e';
-        document.querySelector(".logo-heading").style.color = 'red';
-        let z = document.querySelectorAll('.nav-link')
-        for (let j = 0; j < z.length; j++) {
-          z[j].style.color = 'red';
-        };
-        let y = document.querySelectorAll('.hamburger')
-        for (let j = 0; j < y.length; j++) {
-          y[j].style.background = 'red';
-        };
-        let x = document.querySelectorAll(".nav-link")
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.color = 'white';
-        };
-        console.log('success')
-        sessionStorage.setItem('darkModeActivated','yes');
-        document.querySelector('.checkbox').checked = true;
-
-    }
+  document.querySelector("body").style.background = '#1b1d1e';
+  document.querySelector("body").style.color = 'white';
+  document.querySelector(".main-navigation").style.background = '#1b1d1e';
+  document.querySelector(".new-nav").style.background = '#1b1d1e';
+  document.querySelector(".logo-heading").style.color = 'red';
+  let z = document.querySelectorAll('.nav-link')
+  for (let j = 0; j < z.length; j++) {
+    z[j].style.color = 'red';
+  };
+  let y = document.querySelectorAll('.hamburger')
+  for (let j = 0; j < y.length; j++) {
+    y[j].style.background = 'red';
+  };
+  let x = document.querySelectorAll(".nav-link")
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.color = 'white';
+  };
+  console.log('success')
+  sessionStorage.setItem('darkModeActivated','yes');
+  document.querySelector('.checkbox').checked = true;
+}
