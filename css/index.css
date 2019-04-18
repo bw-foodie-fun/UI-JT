@@ -433,6 +433,11 @@ body {
   flex-wrap: wrap;
   width: 28%;
 }
+@media (max-width: 800px) {
+  .about .about-content-section {
+    width: 40%;
+  }
+}
 @media (max-width: 500px) {
   .about .about-content-section {
     width: 90%;
@@ -446,6 +451,11 @@ body {
 .about .about-content-section .about-img-content img {
   width: 100%;
   align-self: center;
+}
+@media (max-width: 800px) {
+  .about .about-content-section .about-img-content img {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .about .about-content-section .about-img-content img {
